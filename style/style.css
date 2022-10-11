@@ -2,4 +2,117 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    --biggest-title-font:Impact;
+    --text-font: Helvetica;
+    --title-font: Verdana;
+    --div-color: rgba(30,30,46, 0.3);
+    --link-active-color:#777;
+    --link-color:#993470;
+    --link-hover-color:#DD8012;
+    --text-color: #ffee99;
+    --title-color:#fff;
+    --main-background-color: rgb(150,150,230);
+    --secondary-background-color:#DD8012;
+    --tertiary-background-color:#87B979;
+    --nav-color: rgba(200, 200, 200, 0.9);
 }
+body{
+    background: var(--main-background-color);
+}
+nav{
+    position: sticky;
+    top:0;
+    /*will-change: transform;*/
+    height: 40px;
+    width: 100%;
+    background-color:var(--nav-color) ;
+    display: flex;
+    align-items: center;
+    z-index:5;
+}
+.navigation{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--link-hover-color);
+}
+
+h1{
+    text-align:center;
+    font-size: 3rem;
+    font-family: var(--title-font);
+    color: var(--title-color);
+    text-shadow: #777;
+}
+.presentation{
+    height: 80vh;
+    background-color: var(--secondary-background-color);
+}
+.biggest-title{
+    font-size: 5rem;
+    font-family: var(--biggest-title-font);
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    -webkit-transform: skew(0deg, -15deg);
+    transform: skew(0deg, -15deg);
+    background-image: linear-gradient(75deg, var(--title-color), var(--main-background-color), var(--link-color), var(--title-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.texte-presentation{
+    position: sticky;
+    top:60px;
+    /*will-change: transform;*/
+}
+h2{
+    padding-left: 20px;
+    font-size: 2rem;
+    font-family: var(--title-font);
+    color: var(--title-color);
+}
+p{
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+.texte-presentation{
+    padding: 40px;
+    margin: 20px;
+    background-color: var(--div-color);
+}
+.projets{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    background-color: var(--tertiary-background-color);
+}
+.content{
+    width: 100%;
+    height: 300px;
+    padding: 2.5%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+img{
+    max-width: 100%;
+}
+
+footer{
+    width:100%;
+    height: 20vh;
+}
+
