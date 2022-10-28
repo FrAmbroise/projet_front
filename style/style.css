@@ -110,6 +110,9 @@ p{
 img{
     max-width: 100%;
 }
+content.img{
+    object-fit: cover;
+}
 
 footer{
     width:100%;
